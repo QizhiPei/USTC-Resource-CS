@@ -1,0 +1,5 @@
+power AND NOT energy
+NOT contact AND power OR price
+( contact OR power ) AND ( price OR market )
+issue AND contact AND price
+contact OR power OR price
