@@ -1,0 +1,6 @@
+search section: 43 45
+find result: 33 43
+search section: 33 34
+find result: 33 43
+search section: 28 29
+find NULL
