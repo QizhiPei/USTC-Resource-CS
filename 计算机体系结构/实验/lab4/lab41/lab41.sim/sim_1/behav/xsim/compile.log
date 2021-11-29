@@ -1,0 +1,40 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/BTB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BTB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/BranchDecisionMaking.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BranchDecisionMaking
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/CSR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CSR_Reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/DataExt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataExt
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/EXSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EXSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/HarzardUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HarzardUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/IDSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IDSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/IFSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/ImmOperandUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ImmOperandUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/InstructionCache.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionCache
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/MEMSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEMSegReg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/NPC_Generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module NPC_Generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/RV32Core.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RV32Core
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/WBSegReg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WBSegReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/cache.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/main_mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem

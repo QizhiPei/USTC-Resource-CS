@@ -1,0 +1,27 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/ALU.v,1620387601,verilog,,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/BTB.v,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/Parameters.v,ALU,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/BTB.v,1624180343,verilog,,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/BranchDecisionMaking.v,,BTB,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/BranchDecisionMaking.v,1619183891,verilog,,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/CSR.v,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/Parameters.v,BranchDecisionMaking,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/CSR.v,1620403449,verilog,,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/ControlUnit.v,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/Parameters.v,CSR_Reg,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/ControlUnit.v,1621138345,verilog,,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/DataExt.v,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/Parameters.v,ControlUnit,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/DataExt.v,1619189939,verilog,,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/EXSegReg.v,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/Parameters.v,DataExt,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/EXSegReg.v,1624155969,verilog,,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/HarzardUnit.v,,EXSegReg,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/HarzardUnit.v,1624170520,verilog,,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/IDSegReg.v,,HarzardUnit,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/IDSegReg.v,1624170621,verilog,,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/IFSegReg.v,,IDSegReg,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/IFSegReg.v,1619019258,verilog,,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/ImmOperandUnit.v,,IFSegReg,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/ImmOperandUnit.v,1619182023,verilog,,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/InstructionCache.v,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/Parameters.v,ImmOperandUnit,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/InstructionCache.v,1624185089,verilog,,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/MEMSegReg.v,,InstructionCache,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/MEMSegReg.v,1620395893,verilog,,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/NPC_Generator.v,,MEMSegReg,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/NPC_Generator.v,1624158447,verilog,,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/RV32Core.v,,NPC_Generator,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/Parameters.v,1620387570,verilog,,,,,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/RV32Core.v,1624171781,verilog,,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/RegisterFile.v,,RV32Core,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/RegisterFile.v,1619019258,verilog,,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/WBSegReg.v,,RegisterFile,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/WBSegReg.v,1624181939,verilog,,,,WBSegReg,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/cache.sv,1622366577,systemVerilog,,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/main_mem.sv,,cache,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/main_mem.sv,1621751703,systemVerilog,,D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/mem.sv,,main_mem,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB/mem.sv,1624185079,systemVerilog,,,,mem,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab4/Src/Simulation/cpu_tb.v,1624091865,verilog,,,,cpu_tb,,,,,,,,
+G:/vivadoprogram/arch/lab41/lab41.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,

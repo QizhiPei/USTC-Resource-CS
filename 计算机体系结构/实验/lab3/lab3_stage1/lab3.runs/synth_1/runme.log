@@ -1,0 +1,517 @@
+
+*** Running vivado
+    with args -log cache.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source cache.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source cache.tcl -notrace
+Command: synth_design -top cache -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12028 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 469.879 ; gain = 172.492
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'cache' [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:3]
+	Parameter LINE_ADDR_LEN bound to: 3 - type: integer 
+	Parameter SET_ADDR_LEN bound to: 3 - type: integer 
+	Parameter TAG_ADDR_LEN bound to: 6 - type: integer 
+	Parameter WAY_CNT bound to: 4 - type: integer 
+	Parameter STRATEGY bound to: 0 - type: integer 
+	Parameter MEM_ADDR_LEN bound to: 9 - type: integer 
+	Parameter UNUSED_ADDR_LEN bound to: 18 - type: integer 
+	Parameter WAY_ADDR_LEN bound to: 2 - type: integer 
+	Parameter LINE_SIZE bound to: 8 - type: integer 
+	Parameter SET_SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:128]
+INFO: [Synth 8-6157] synthesizing module 'main_mem' [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv:2]
+	Parameter LINE_ADDR_LEN bound to: 3 - type: integer 
+	Parameter ADDR_LEN bound to: 9 - type: integer 
+	Parameter RD_CYCLE bound to: 50 - type: integer 
+	Parameter WR_CYCLE bound to: 50 - type: integer 
+	Parameter LINE_SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'mem' [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/mem.sv:2]
+	Parameter ADDR_LEN bound to: 12 - type: integer 
+	Parameter MEM_SIZE bound to: 4096 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mem' (1#1) [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/mem.sv:2]
+WARNING: [Synth 8-5788] Register rd_delay_reg in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv:36]
+WARNING: [Synth 8-5788] Register wr_delay_reg in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv:37]
+WARNING: [Synth 8-5788] Register rd_line_reg[0] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[1] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[2] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[3] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[4] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[5] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[6] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_reg[7] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[0] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[1] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[2] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[3] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[4] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[5] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[6] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv:87]
+WARNING: [Synth 8-5788] Register rd_line_latch_reg[7] in module main_mem is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv:87]
+INFO: [Synth 8-6155] done synthesizing module 'main_mem' (2#1) [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv:2]
+WARNING: [Synth 8-5856] 3D RAM dirty_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM valid_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM order_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM cache_mem_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM cache_tags_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5788] Register dirty_reg[0][0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[0][1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[0][2] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[0][3] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[1][0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[1][1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[1][2] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[1][3] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[2][0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[2][1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[2][2] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[2][3] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[3][0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[3][1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[3][2] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[3][3] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[4][0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[4][1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[4][2] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[4][3] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[5][0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[5][1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[5][2] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[5][3] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[6][0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[6][1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[6][2] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[6][3] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[7][0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[7][1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[7][2] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register dirty_reg[7][3] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:115]
+WARNING: [Synth 8-5788] Register valid_reg[0][0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[0][1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[0][2] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[0][3] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[1][0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[1][1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[1][2] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[1][3] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[2][0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[2][1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[2][2] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[2][3] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[3][0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[3][1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[3][2] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[3][3] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[4][0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[4][1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[4][2] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[4][3] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[5][0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[5][1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[5][2] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[5][3] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[6][0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[6][1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[6][2] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[6][3] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[7][0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[7][1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[7][2] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register valid_reg[7][3] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:116]
+WARNING: [Synth 8-5788] Register order_reg[0][0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:117]
+WARNING: [Synth 8-5788] Register order_reg[0][1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:117]
+WARNING: [Synth 8-5788] Register order_reg[0][2] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:117]
+WARNING: [Synth 8-5788] Register order_reg[0][3] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:117]
+WARNING: [Synth 8-5788] Register order_reg[1][0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:117]
+WARNING: [Synth 8-5788] Register order_reg[1][1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:117]
+WARNING: [Synth 8-5788] Register order_reg[1][2] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:117]
+WARNING: [Synth 8-5788] Register order_reg[1][3] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:117]
+WARNING: [Synth 8-5788] Register order_reg[2][0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:117]
+WARNING: [Synth 8-5788] Register order_reg[2][1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:117]
+WARNING: [Synth 8-5788] Register order_reg[2][2] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:117]
+WARNING: [Synth 8-5788] Register order_reg[2][3] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:117]
+WARNING: [Synth 8-5788] Register order_reg[3][0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:117]
+WARNING: [Synth 8-5788] Register order_reg[3][1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:117]
+WARNING: [Synth 8-5788] Register order_reg[3][2] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:117]
+WARNING: [Synth 8-5788] Register order_reg[3][3] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:117]
+WARNING: [Synth 8-5788] Register order_reg[4][0] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:117]
+WARNING: [Synth 8-5788] Register order_reg[4][1] in module cache is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:117]
+INFO: [Common 17-14] Message 'Synth 8-5788' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'cache' (3#1) [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:3]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[31]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[30]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[29]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[28]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[27]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[26]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[25]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[24]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[23]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[22]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[21]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[20]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[19]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[18]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[17]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[16]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[15]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[14]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[1]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 644.340 ; gain = 346.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 644.340 ; gain = 346.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 644.340 ; gain = 346.953
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-802] inferred FSM for state register 'cache_stat_reg' in module 'cache'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 | 00000000000000000000000000000000
+                SWAP_OUT |                             0010 | 00000000000000000000000000000001
+                 SWAP_IN |                             0100 | 00000000000000000000000000000010
+              SWAP_IN_OK |                             1000 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cache_stat_reg' using encoding 'one-hot' in module 'cache'
+WARNING: [Synth 8-327] inferring latch for variable 'way_addr_reg' [D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv:89]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:27 . Memory (MB): peak = 724.648 ; gain = 427.262
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 318   
+	               12 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                6 Bit    Registers := 33    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 65    
++---RAMs : 
+	             128K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 143   
+	   4 Input     32 Bit        Muxes := 50    
+	   2 Input     12 Bit        Muxes := 6     
+	   2 Input      9 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 656   
+	   4 Input      1 Bit        Muxes := 455   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module cache 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 298   
+	                9 Bit    Registers := 1     
+	                6 Bit    Registers := 33    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 64    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 136   
+	   4 Input     32 Bit        Muxes := 50    
+	   2 Input      9 Bit        Muxes := 2     
+	   4 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 646   
+	   4 Input      1 Bit        Muxes := 455   
+Module mem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---RAMs : 
+	             128K Bit         RAMs := 1     
+Module main_mem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 19    
+	               12 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   2 Input     12 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design cache has unconnected port addr[31]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[30]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[29]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[28]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[27]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[26]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[25]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[24]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[23]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[22]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[21]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[20]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[19]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[18]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[17]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[16]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[15]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[14]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[1]
+WARNING: [Synth 8-3331] design cache has unconnected port addr[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:08 . Memory (MB): peak = 980.738 ; gain = 683.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mem:        | ram_cell_reg | 4 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 4      | 
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance main_mem_instance/i_0/mem_inst/ram_cell_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance main_mem_instance/i_0/mem_inst/ram_cell_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance main_mem_instance/i_0/mem_inst/ram_cell_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance main_mem_instance/i_0/mem_inst/ram_cell_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:01:14 . Memory (MB): peak = 980.738 ; gain = 683.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|mem:        | ram_cell_reg | 4 K x 32(READ_FIRST)   | W | R |                        |   |   | Port A           | 0      | 4      | 
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance main_mem_instance/mem_inst/ram_cell_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance main_mem_instance/mem_inst/ram_cell_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance main_mem_instance/mem_inst/ram_cell_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance main_mem_instance/mem_inst/ram_cell_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:26 ; elapsed = 00:01:24 . Memory (MB): peak = 980.738 ; gain = 683.352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:32 ; elapsed = 00:01:29 . Memory (MB): peak = 980.738 ; gain = 683.352
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:32 ; elapsed = 00:01:29 . Memory (MB): peak = 980.738 ; gain = 683.352
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:32 ; elapsed = 00:01:30 . Memory (MB): peak = 980.738 ; gain = 683.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:32 ; elapsed = 00:01:30 . Memory (MB): peak = 980.738 ; gain = 683.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:35 ; elapsed = 00:01:33 . Memory (MB): peak = 980.738 ; gain = 683.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:35 ; elapsed = 00:01:33 . Memory (MB): peak = 980.738 ; gain = 683.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    37|
+|3     |LUT1     |     5|
+|4     |LUT2     |   158|
+|5     |LUT3     |   118|
+|6     |LUT4     |   426|
+|7     |LUT5     |   640|
+|8     |LUT6     |  4241|
+|9     |MUXF7    |   928|
+|10    |RAMB36E1 |     4|
+|11    |FDCE     |  1487|
+|12    |FDPE     |     4|
+|13    |FDRE     |  8968|
+|14    |LD       |     2|
+|15    |IBUF     |    48|
+|16    |OBUF     |    33|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------------+---------+------+
+|      |Instance            |Module   |Cells |
++------+--------------------+---------+------+
+|1     |top                 |         | 17100|
+|2     |  main_mem_instance |main_mem |  1089|
+|3     |    mem_inst        |mem      |     4|
++------+--------------------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:35 ; elapsed = 00:01:33 . Memory (MB): peak = 980.738 ; gain = 683.352
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 449 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:35 ; elapsed = 00:01:33 . Memory (MB): peak = 980.738 ; gain = 683.352
+Synthesis Optimization Complete : Time (s): cpu = 00:01:35 ; elapsed = 00:01:33 . Memory (MB): peak = 980.738 ; gain = 683.352
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 971 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'cache' is not ideal for floorplanning, since the cellview 'cache' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 980.738 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LD => LDCE: 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 147 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:46 ; elapsed = 00:01:45 . Memory (MB): peak = 980.738 ; gain = 683.352
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 980.738 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'G:/vivadoprogram/arch/lab3/lab3.runs/synth_1/cache.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file cache_utilization_synth.rpt -pb cache_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May 30 17:08:15 2021...

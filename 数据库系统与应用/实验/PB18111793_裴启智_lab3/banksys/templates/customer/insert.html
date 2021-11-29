@@ -1,0 +1,40 @@
+<!doctype html>
+<title>添加客户</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<section class="content">
+  <header>
+    <h1 style="text-align:center;">添加客户</h1>
+  </header>
+
+  <form method="post">
+    <label for="cusID">客户身份账号</label>
+        <input type="cusID" name="cusID" id="cusID" required>
+    
+    <label for="cusname">客户姓名</label>
+        <input type="cusname" name="cusname" id="cusname" required>
+    
+    <label for="cusphone">客户联系电话</label>
+        <input name="cusphone" id="cusphone" required>
+
+    <label for="address">客户家庭住址</label>
+        <input name="address" id="address" required>
+      
+    <label for="contact_phone">联系人电话</label>
+        <input name="contact_phone" id="contact_phone" required>
+
+    <label for="contact_name">联系人姓名</label>
+        <input name="contact_name" id="contact_name" required>
+
+    <label for="contact_Email">联系人Email</label>
+        <input name="contact_Email" id="contact_Email" required>
+
+    <label for="relation">联系人与客户关系</label>
+        <input name="relation" id="relation" required>
+
+    <input type="submit" value="插入">
+
+  </form>
+  
+</section>

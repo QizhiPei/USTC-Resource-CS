@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="testBench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="testBench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="16431400000fs"></ZoomStartTime>
+      <ZoomEndTime time="16460940001fs"></ZoomEndTime>
+      <Cursor1Time time="16460000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="130"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="35" />
+   <wvobject fp_name="/testBench/CPU_CLK" type="logic">
+      <obj_property name="ElementShortName">CPU_CLK</obj_property>
+      <obj_property name="ObjectShortName">CPU_CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/CPU_RST" type="logic">
+      <obj_property name="ElementShortName">CPU_RST</obj_property>
+      <obj_property name="ObjectShortName">CPU_RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/CPU_Debug_DataRAM_A2" type="array">
+      <obj_property name="ElementShortName">CPU_Debug_DataRAM_A2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CPU_Debug_DataRAM_A2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/CPU_Debug_DataRAM_WD2" type="array">
+      <obj_property name="ElementShortName">CPU_Debug_DataRAM_WD2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CPU_Debug_DataRAM_WD2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/CPU_Debug_DataRAM_WE2" type="array">
+      <obj_property name="ElementShortName">CPU_Debug_DataRAM_WE2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">CPU_Debug_DataRAM_WE2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/CPU_Debug_DataRAM_RD2" type="array">
+      <obj_property name="ElementShortName">CPU_Debug_DataRAM_RD2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CPU_Debug_DataRAM_RD2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/CPU_Debug_InstRAM_A2" type="array">
+      <obj_property name="ElementShortName">CPU_Debug_InstRAM_A2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CPU_Debug_InstRAM_A2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/CPU_Debug_InstRAM_WD2" type="array">
+      <obj_property name="ElementShortName">CPU_Debug_InstRAM_WD2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CPU_Debug_InstRAM_WD2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/CPU_Debug_InstRAM_WE2" type="array">
+      <obj_property name="ElementShortName">CPU_Debug_InstRAM_WE2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">CPU_Debug_InstRAM_WE2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/CPU_Debug_InstRAM_RD2" type="array">
+      <obj_property name="ElementShortName">CPU_Debug_InstRAM_RD2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CPU_Debug_InstRAM_RD2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/LoadDataRamFile" type="array">
+      <obj_property name="ElementShortName">LoadDataRamFile[31:0]</obj_property>
+      <obj_property name="ObjectShortName">LoadDataRamFile[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/LoadInstRamFile" type="array">
+      <obj_property name="ElementShortName">LoadInstRamFile[31:0]</obj_property>
+      <obj_property name="ObjectShortName">LoadInstRamFile[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/SaveDataRamFile" type="array">
+      <obj_property name="ElementShortName">SaveDataRamFile[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SaveDataRamFile[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/SaveInstRamFile" type="array">
+      <obj_property name="ElementShortName">SaveInstRamFile[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SaveInstRamFile[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/RegisterFile1/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/RegisterFile1/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/RegisterFile1/WE3" type="logic">
+      <obj_property name="ElementShortName">WE3</obj_property>
+      <obj_property name="ObjectShortName">WE3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/RegisterFile1/A1" type="array">
+      <obj_property name="ElementShortName">A1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">A1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/RegisterFile1/A2" type="array">
+      <obj_property name="ElementShortName">A2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">A2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/RegisterFile1/A3" type="array">
+      <obj_property name="ElementShortName">A3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">A3[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/RegisterFile1/WD3" type="array">
+      <obj_property name="ElementShortName">WD3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WD3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/RegisterFile1/RD1" type="array">
+      <obj_property name="ElementShortName">RD1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RD1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/RegisterFile1/RD2" type="array">
+      <obj_property name="ElementShortName">RD2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RD2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/RegisterFile1/RegFile" type="array">
+      <obj_property name="ElementShortName">RegFile[31:1][31:0]</obj_property>
+      <obj_property name="ObjectShortName">RegFile[31:1][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/RegisterFile1/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/RegisterFile2/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/RegisterFile2/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/RegisterFile2/CSR_write" type="logic">
+      <obj_property name="ElementShortName">CSR_write</obj_property>
+      <obj_property name="ObjectShortName">CSR_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/RegisterFile2/CSR_read" type="logic">
+      <obj_property name="ElementShortName">CSR_read</obj_property>
+      <obj_property name="ObjectShortName">CSR_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/RegisterFile2/Read_addr" type="array">
+      <obj_property name="ElementShortName">Read_addr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Read_addr[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/RegisterFile2/Write_addr" type="array">
+      <obj_property name="ElementShortName">Write_addr[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Write_addr[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/RegisterFile2/Write_data" type="array">
+      <obj_property name="ElementShortName">Write_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Write_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/RegisterFile2/Out" type="array">
+      <obj_property name="ElementShortName">Out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testBench/RV32Core1/RegisterFile2/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+</wave_config>

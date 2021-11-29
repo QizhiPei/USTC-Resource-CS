@@ -1,0 +1,18 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: G:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 2551b0fca8814f8f95e09bb41037f2e7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot cache_tb_behav xil_defaultlib.cache_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv" Line 3. Module cache(SET_ADDR_LEN=2,TAG_ADDR_LEN=12) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv" Line 2. Module main_mem(ADDR_LEN=14) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/mem.sv" Line 2. Module mem(ADDR_LEN=17) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mem(ADDR_LEN=17)
+Compiling module xil_defaultlib.main_mem(ADDR_LEN=14)
+Compiling module xil_defaultlib.cache(SET_ADDR_LEN=2,TAG_ADDR_LE...
+Compiling module xil_defaultlib.cache_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cache_tb_behav

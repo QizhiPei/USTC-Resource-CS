@@ -1,0 +1,28 @@
+<!doctype html>
+<title>贷款支付</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<section class="content">
+  <header>
+    <h1 style="text-align:center;">贷款支付</h1>
+  </header>
+
+  <form method="post">
+    <label for="loanID">贷款号</label>
+        <input type="loanID" name="loanID" id="loanID" required>
+
+    <label for="cusID">客户身份证号</label>
+        <input type="cusID" name="cusID" id="cusID" required>
+
+    <label for="money">支付金额</label>
+        <input name="money" name="name" id="money" required>
+
+    <label for="paytime">支付时间</label>
+        <input name="paytime" name="paytime" id="paytime" required>
+
+    <input type="submit" value="支付">
+
+  </form>
+  
+</section>

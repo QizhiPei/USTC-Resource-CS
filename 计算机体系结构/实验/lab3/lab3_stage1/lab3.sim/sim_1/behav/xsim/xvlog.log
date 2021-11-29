@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/mem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cache_tb

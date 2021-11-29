@@ -1,0 +1,104 @@
+
+4testAll.om:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00010080 <_start>:
+   10080:	00000013          	nop
+
+00010084 <test2>:
+   10084:	01100093          	li	ra,17
+   10088:	01200113          	li	sp,18
+   1008c:	00a09173          	csrrw	sp,0xa,ra
+   10090:	00200193          	li	gp,2
+   10094:	0e011263          	bnez	sp,10178 <fail>
+
+00010098 <test3>:
+   10098:	00a09173          	csrrw	sp,0xa,ra
+   1009c:	01100f13          	li	t5,17
+   100a0:	00300193          	li	gp,3
+   100a4:	0de11a63          	bne	sp,t5,10178 <fail>
+
+000100a8 <test4>:
+   100a8:	01100093          	li	ra,17
+   100ac:	01200113          	li	sp,18
+   100b0:	00a09173          	csrrw	sp,0xa,ra
+   100b4:	00a9d173          	csrrwi	sp,0xa,19
+   100b8:	00400193          	li	gp,4
+   100bc:	0a209e63          	bne	ra,sp,10178 <fail>
+
+000100c0 <test5>:
+   100c0:	00a09173          	csrrw	sp,0xa,ra
+   100c4:	01300f13          	li	t5,19
+   100c8:	00500193          	li	gp,5
+   100cc:	0be11663          	bne	sp,t5,10178 <fail>
+
+000100d0 <test6>:
+   100d0:	01300093          	li	ra,19
+   100d4:	01400113          	li	sp,20
+   100d8:	00b0a173          	csrrs	sp,0xb,ra
+   100dc:	00600193          	li	gp,6
+   100e0:	08011c63          	bnez	sp,10178 <fail>
+
+000100e4 <test7>:
+   100e4:	00b09173          	csrrw	sp,0xb,ra
+   100e8:	01300f13          	li	t5,19
+   100ec:	00700193          	li	gp,7
+   100f0:	09e11463          	bne	sp,t5,10178 <fail>
+
+000100f4 <test8>:
+   100f4:	01300093          	li	ra,19
+   100f8:	01400113          	li	sp,20
+   100fc:	00dde173          	csrrsi	sp,0xd,27
+   10100:	00800193          	li	gp,8
+   10104:	06011a63          	bnez	sp,10178 <fail>
+
+00010108 <test9>:
+   10108:	00d09173          	csrrw	sp,0xd,ra
+   1010c:	01b00f13          	li	t5,27
+   10110:	00900193          	li	gp,9
+   10114:	07e11263          	bne	sp,t5,10178 <fail>
+
+00010118 <test10>:
+   10118:	01100093          	li	ra,17
+   1011c:	01200113          	li	sp,18
+   10120:	00a09173          	csrrw	sp,0xa,ra
+   10124:	00100093          	li	ra,1
+   10128:	00a0b173          	csrrc	sp,0xa,ra
+   1012c:	01100f13          	li	t5,17
+   10130:	00a00193          	li	gp,10
+   10134:	042f1263          	bne	t5,sp,10178 <fail>
+
+00010138 <test11>:
+   10138:	00a09173          	csrrw	sp,0xa,ra
+   1013c:	01000f13          	li	t5,16
+   10140:	00b00193          	li	gp,11
+   10144:	022f1a63          	bne	t5,sp,10178 <fail>
+
+00010148 <test12>:
+   10148:	01300093          	li	ra,19
+   1014c:	01400113          	li	sp,20
+   10150:	00b0a173          	csrrs	sp,0xb,ra
+   10154:	00b17173          	csrrci	sp,0xb,2
+   10158:	01300f13          	li	t5,19
+   1015c:	00c00193          	li	gp,12
+   10160:	002f1c63          	bne	t5,sp,10178 <fail>
+
+00010164 <test13>:
+   10164:	00b09173          	csrrw	sp,0xb,ra
+   10168:	01100f13          	li	t5,17
+   1016c:	00d00193          	li	gp,13
+   10170:	01e11463          	bne	sp,t5,10178 <fail>
+   10174:	00301463          	bne	zero,gp,1017c <pass>
+
+00010178 <fail>:
+   10178:	00000a6f          	jal	s4,10178 <fail>
+
+0001017c <pass>:
+   1017c:	00100193          	li	gp,1
+
+00010180 <finish1>:
+   10180:	00000a6f          	jal	s4,10180 <finish1>
+   10184:	c0001073          	unimp
+	...

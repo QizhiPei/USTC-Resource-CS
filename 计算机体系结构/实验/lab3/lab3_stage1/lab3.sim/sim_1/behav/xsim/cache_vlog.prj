@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv" \
+"D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/mem.sv" \
+"D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

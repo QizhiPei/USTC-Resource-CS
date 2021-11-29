@@ -1,0 +1,36 @@
+<!doctype html>
+<title>账户管理</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<section class="content">
+  <header>
+    <h1 style="text-align:center;">账户管理</h1>
+  </header>
+
+  <div class="divForm">
+  <form method="post">
+    <input type="submit" name="insert1" value="开储蓄账户" style="font-size:20px"><br><br><br>
+    <input type="submit" name="insert2" value="开支票账户" style="font-size:20px"><br><br><br>
+    <input type="submit" name="delete" value="删除账户" style="font-size:20px"><br><br><br>
+    <input type="submit" name="update" value="修改账户" style="font-size:20px"><br><br><br>
+    <input type="submit" name="search_single" value="查询单个账户" style="font-size:20px"><br><br><br>
+    <input type="submit" name="search" value="查询所有账户" style="font-size:20px"><br><br><br>
+    <input type="submit" name="back"   value="回到上一级菜单" style="font-size:20px"><br><br><br>
+  </form>
+  <div>
+  
+</section>
+
+<style type="text/css">  
+input {color: red}
+
+body{  
+text-align: center;  
+margin:0 auto;  
+background-color: #dcffff; 
+}  
+.divForm{  
+display: inline-block;  
+}  
+</style>  

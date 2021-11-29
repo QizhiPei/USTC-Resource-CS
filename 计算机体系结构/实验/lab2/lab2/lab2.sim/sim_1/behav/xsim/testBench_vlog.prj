@@ -1,0 +1,26 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"D:/study/architecture/ustc_ca2021_lab/lab2/SourceCode/ALU.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab2/SourceCode/BranchDecisionMaking.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab2/SourceCode/CSR.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab2/SourceCode/ControlUnit.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab2/SourceCode/DataExt.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab2/SourceCode/BRAMModule/DataRam.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab2/SourceCode/EXSegReg.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab2/SourceCode/HarzardUnit.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab2/SourceCode/IDSegReg.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab2/SourceCode/IFSegReg.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab2/SourceCode/ImmOperandUnit.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab2/SourceCode/BRAMModule/InstructionRam.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab2/SourceCode/MEMSegReg.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab2/SourceCode/NPC_Generator.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab2/SourceCode/RV32Core.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab2/SourceCode/RegisterFile.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab2/SourceCode/WBSegReg.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab2/Simulation/testBench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

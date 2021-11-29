@@ -1,0 +1,31 @@
+<!doctype html>
+<title>修改账户</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<section class="content">
+  <header>
+    <h1 style="text-align:center;">请输入合法的账户号</h1>
+  </header>
+
+  <form method="post">
+    <label for="accountID">账户号</label>
+        <input type="accountID" name="accountID" id="accountID" required>
+    
+    <label for="money">余额</label>
+        <input type="money" name="money" id="money" required>
+    
+    <label for="interest">利率</label>
+        <input name="interestrate" id="interestrate" required>
+
+    <label for="savetype">货币类型</label>
+        <input name="savetype" id="savetype" required>
+
+    <label for="overdraft">透支额</label>
+        <input name="overdraft" id="overdraft" required>
+
+    <input type="submit" value="修改">
+
+  </form>
+  
+</section>

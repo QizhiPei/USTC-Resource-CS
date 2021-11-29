@@ -1,0 +1,36 @@
+<!doctype html>
+<title>按月份统计</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<section class="content">
+  <header>
+    <h1 style="text-align:center;">按月份统计</h1>
+  </header>
+
+  <table>
+    <thead>
+        <tr>
+            <th style="width: 33%"> 月份 </th>
+            <th style="width: 33%"> 业务总金额 </th>
+            <th style="width: 33%"> 业务用户数  </th>
+        </tr>
+    </thead>
+    <tbody>
+		{% for row in rows %}
+		<tr>
+			<td style="width: 33%"> {{ row[0]  }}</td>
+            <td style="width: 33%"> {{ row[1]  }}</td>
+            <td style="width: 33%"> {{ row[2]  }}</td>
+		<tr>
+		{% endfor %}
+	</tbody>
+  </table>
+
+  <form method="post" id="table"> 
+    <div>
+      <input id = "clearBtn" type="submit" name = "back" value="回到上一级菜单"> 
+    </div>
+    
+  </form>
+</section>

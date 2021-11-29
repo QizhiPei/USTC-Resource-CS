@@ -1,0 +1,38 @@
+<!doctype html>
+<title>查询账户</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<section class="content">
+  <header>
+    <h1 style="text-align:center;">{{ tablename }}表中所有记录</h1>
+  </header>
+
+  <table>
+    <thead>
+        <tr>
+            <th style="width: 25%"> 账户号  </th>
+            <th style="width: 25%"> 客户身份证号  </th>
+            <th style="width: 25%"> 账户类型 </th>
+            <th style="width: 25%"> 最近访问时间 </th>
+        </tr>
+    </thead>
+    <tbody>
+		{% for row in rows %}
+		<tr>
+			      <td style="width: 25%"> {{ row[0] }}</td>
+            <td style="width: 25%"> {{ row[1] }}</td>
+            <td style="width: 25%"> {{ row[2] }}</td>
+            <td style="width: 25%"> {{ row[3] }}</td>
+		<tr>
+		{% endfor %}
+	</tbody>
+  </table>
+
+  <form method="post" id="table"> 
+    <div>
+      <input id = "clearBtn" type="submit" name = "back" value="回到上一级菜单"> 
+    </div>
+    
+  </form>
+</section>

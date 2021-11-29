@@ -1,0 +1,9 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv,1622354404,systemVerilog,,D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv,,cache,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache_tb.sv,1621760526,systemVerilog,,,,cache_tb,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv,1621751703,systemVerilog,,D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/mem.sv,,main_mem,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/mem.sv,1621775115,systemVerilog,,D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache_tb.sv,,mem,,,,,,,,
+G:/vivadoprogram/arch/lab3/lab3.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,

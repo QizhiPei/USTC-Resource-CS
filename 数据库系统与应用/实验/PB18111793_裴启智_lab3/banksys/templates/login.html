@@ -1,0 +1,28 @@
+<!doctype html>
+<title>Database Login</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<section class="content">
+  <header>
+    <h1 style="text-align:center;">LOG IN</h1>
+  </header>
+
+  <form method="post">
+    <label for="ipaddr">Server Address</label>
+        <input type="ipaddr" name="ipaddr" id="ipaddr" required>
+    
+    <label for="database">Database Name</label>
+        <input type="database" name="database" id="database" required>
+    
+    <label for="username">Username</label>
+        <input name="username" id="username" required>
+
+    <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+
+    <input type="submit" value="Log In">
+
+  </form>
+  
+</section>

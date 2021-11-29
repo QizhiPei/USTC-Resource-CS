@@ -1,0 +1,34 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB_BHT/ALU.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB_BHT/BHT.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB_BHT/BTB.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB_BHT/BranchDecisionMaking.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB_BHT/CSR.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB_BHT/ControlUnit.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB_BHT/DataExt.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB_BHT/EXSegReg.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB_BHT/HarzardUnit.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB_BHT/IDSegReg.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB_BHT/IFSegReg.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB_BHT/ImmOperandUnit.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB_BHT/InstructionCache.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB_BHT/MEMSegReg.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB_BHT/NPC_Generator.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB_BHT/RV32Core.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB_BHT/RegisterFile.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB_BHT/WBSegReg.v" \
+
+sv xil_defaultlib  \
+"D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB_BHT/cache.sv" \
+"D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB_BHT/main_mem.sv" \
+"D:/study/architecture/ustc_ca2021_lab/lab4/Src/BTB_BHT/mem.sv" \
+
+verilog xil_defaultlib  \
+"D:/study/architecture/ustc_ca2021_lab/lab4/Src/Simulation/cpu_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

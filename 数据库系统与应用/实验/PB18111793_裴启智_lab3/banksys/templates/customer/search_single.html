@@ -1,0 +1,46 @@
+<!doctype html>
+<title>查询客户</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<section class="content">
+  <header>
+    <h1 style="text-align:center;">查询结果</h1>
+  </header>
+
+  <table>
+    <thead>
+        <tr>
+            <th style="width: 12.5%"> 客户身份证    </th>
+            <th style="width: 12.5%"> 客户姓名  </th>
+            <th style="width: 12.5%"> 客户联系电话 </th>
+            <th style="width: 12.5%"> 客户家庭住址 </th>
+            <th style="width: 12.5%"> 联系人电话 </th>
+            <th style="width: 12.5%"> 联系人姓名 </th>
+            <th style="width: 12.5%"> 联系人Email </th>
+            <th style="width: 12.5%"> 联系人与客户关系 </th>
+        </tr>
+    </thead>
+    <tbody>
+		{% for row in rows %}
+		<tr>
+			<td style="width: 12.5%"> {{ row[0]  }}</td>
+            <td style="width: 12.5%"> {{ row[1]  }}</td>
+            <td style="width: 12.5%"> {{ row[2]  }}</td>
+            <td style="width: 12.5%"> {{ row[3]  }}</td>
+            <td style="width: 12.5%"> {{ row[4]  }}</td>
+            <td style="width: 12.5%"> {{ row[5]  }}</td>
+            <td style="width: 12.5%"> {{ row[6]  }}</td>
+            <td style="width: 12.5%"> {{ row[7]  }}</td>
+		<tr>
+		{% endfor %}
+	</tbody>
+  </table>
+
+  <form method="post" id="table"> 
+    <div>
+      <input id = "clearBtn" type="submit" name = "back" value="回到上一级菜单"> 
+    </div>
+    
+  </form>
+</section>

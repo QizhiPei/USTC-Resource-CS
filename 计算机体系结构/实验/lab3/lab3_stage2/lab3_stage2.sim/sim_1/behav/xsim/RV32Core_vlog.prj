@@ -1,0 +1,31 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/ALU.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/BranchDecisionMaking.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/CSR.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/ControlUnit.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/DataExt.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/EXSegReg.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/HarzardUnit.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/IDSegReg.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/IFSegReg.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/ImmOperandUnit.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab3/ASM-Benchmark/generate_inst/InstructionCache.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/MEMSegReg.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/NPC_Generator.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/RegisterFile.v" \
+"D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/WBSegReg.v" \
+
+sv xil_defaultlib  \
+"D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv" \
+"D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv" \
+"D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/mem.sv" \
+
+verilog xil_defaultlib  \
+"D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/RV32Core.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,26 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+D:/study/architecture/ustc_ca2021_lab/lab3/ASM-Benchmark/generate_inst/InstructionCache.v,1622369056,verilog,,D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/MEMSegReg.v,,InstructionCache,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Testbench/cpu_tb.v,1621771364,verilog,,,,cpu_tb,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/ALU.v,1620387601,verilog,,D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/BranchDecisionMaking.v,D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/Parameters.v,ALU,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/BranchDecisionMaking.v,1619183891,verilog,,D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/CSR.v,D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/Parameters.v,BranchDecisionMaking,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/CSR.v,1620403449,verilog,,D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/ControlUnit.v,D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/Parameters.v,CSR_Reg,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/ControlUnit.v,1621138345,verilog,,D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/DataExt.v,D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/Parameters.v,ControlUnit,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/DataExt.v,1619189939,verilog,,D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/EXSegReg.v,D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/Parameters.v,DataExt,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/EXSegReg.v,1620395927,verilog,,D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/HarzardUnit.v,,EXSegReg,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/HarzardUnit.v,1621761394,verilog,,D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/IDSegReg.v,,HarzardUnit,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/IDSegReg.v,1621770194,verilog,,D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/IFSegReg.v,,IDSegReg,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/IFSegReg.v,1619019258,verilog,,D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/ImmOperandUnit.v,,IFSegReg,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/ImmOperandUnit.v,1619182023,verilog,,D:/study/architecture/ustc_ca2021_lab/lab3/ASM-Benchmark/generate_inst/InstructionCache.v,D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/Parameters.v,ImmOperandUnit,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/MEMSegReg.v,1620395893,verilog,,D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/NPC_Generator.v,,MEMSegReg,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/NPC_Generator.v,1619189928,verilog,,D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/RV32Core.v,,NPC_Generator,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/Parameters.v,1620387570,verilog,,,,,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/RV32Core.v,1621763964,verilog,,D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/RegisterFile.v,,RV32Core,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/RegisterFile.v,1619019258,verilog,,D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/WBSegReg.v,,RegisterFile,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab3/CPUSrcCode/Verilog/WBSegReg.v,1622370332,verilog,,,,WBSegReg,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/cache.sv,1622366577,systemVerilog,,D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv,,cache,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/main_mem.sv,1621751703,systemVerilog,,D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/mem.sv,,main_mem,,,,,,,,
+D:/study/architecture/ustc_ca2021_lab/lab3/CacheSrcCode/mem.sv,1622369067,systemVerilog,,,,mem,,,,,,,,
+G:/vivadoprogram/arch/lab3_stage2/lab3_stage2.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,

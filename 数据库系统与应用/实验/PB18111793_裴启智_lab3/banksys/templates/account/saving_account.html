@@ -1,0 +1,34 @@
+<!doctype html>
+<title>开储蓄账户</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<section class="content">
+  <header>
+    <h1 style="text-align:center;">开储蓄账户</h1>
+  </header>
+
+  <form method="post">
+    <label for="cusID">客户身份证号</label>
+        <input type="cusID" name="cusID" id="cusID" required>
+    
+    <label for="accountID">账户号</label>
+        <input type="accountID" name="accountID" id="accountID" required>
+
+    <label for="money">余额</label>
+        <input type="money" name="money" id="money" required>
+    
+    <label for="settime">开户时间</label>
+        <input type="settime" name="settime" id="settime" required>
+
+    <label for="interestrate">利率</label>
+        <input type="interestrate" name="interestrate" id="interestrate" required>
+
+    <label for="saveType">货币类型</label>
+        <input type="saveType" name="saveType" id="saveType" required>
+
+    <input type="submit" value="开户">
+
+  </form>
+  
+</section>

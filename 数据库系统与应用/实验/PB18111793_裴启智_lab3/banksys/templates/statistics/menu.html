@@ -1,0 +1,34 @@
+<!doctype html>
+<title>业务统计（总金额、用户数）</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<section class="content">
+  <header>
+    <h1 style="text-align:center;">业务统计</h1>
+  </header>
+
+  <div class="divForm">
+  <form method="post">
+    <input type="submit" name="classify"  value="按业务分类统计" style="font-size:20px"><br><br><br>
+    <input type="submit" name="month" value="按月份统计" style="font-size:20px"><br><br><br>
+    <input type="submit" name="quarter" value="按季度统计" style="font-size:20px"><br><br><br>
+    <input type="submit" name="year" value="按年份统计" style="font-size:20px"><br><br><br>
+    <input type="submit" name="back"   value="回到上一级菜单" style="font-size:20px"><br><br><br>
+  </form>
+  <div>
+  
+</section>
+
+<style type="text/css">  
+input {color: red}
+
+body{  
+text-align: center;  
+margin:0 auto;  
+background-color: #dcffff; 
+}  
+.divForm{  
+display: inline-block;  
+}  
+</style>  

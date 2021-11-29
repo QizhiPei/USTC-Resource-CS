@@ -1,0 +1,36 @@
+<!doctype html>
+<title>主菜单</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<section class="content" >
+  <header>
+    <h1 style="text-align:center;">主菜单</h1>
+  </header>
+
+  <div class="divForm">
+  <form method="post">
+    <input type="submit" name="customer_management" value="客户管理" style="font-size:20px"><br><br><br>
+    <input type="submit" name="account_management" value="账户管理" style="font-size:20px"><br><br><br>
+    <input type="submit" name="loan_management" value="贷款管理" style="font-size:20px"><br><br><br>
+    <input type="submit" name="business_statistics" value="业务统计" style="font-size:20px"><br><br><br>
+  </form>
+  </div>
+  
+</section>
+
+<style type="text/css">  
+
+
+input {color: red}
+body{  
+text-align: center;  
+margin:0 auto;  
+background-color: #dcffff; 
+}  
+.divForm{  
+display: inline-block;  
+}  
+
+
+</style>  

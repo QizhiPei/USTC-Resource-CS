@@ -1,0 +1,19 @@
+<!doctype html>
+<title>删除贷款</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<section class="content">
+  <header>
+    <h1 style="text-align:center;">删除贷款</h1>
+  </header>
+
+  <form method="post">
+    <label for="loanID">贷款号</label>
+        <input type="loanID" name="loanID" id="loanID" required>
+
+    <input type="submit" value="删除">
+
+  </form>
+  
+</section>

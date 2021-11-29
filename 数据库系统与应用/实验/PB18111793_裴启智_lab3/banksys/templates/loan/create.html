@@ -1,0 +1,25 @@
+<!doctype html>
+<title>发放新贷款</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<section class="content">
+  <header>
+    <h1 style="text-align:center;">发放新贷款</h1>
+  </header>
+
+  <form method="post">
+    <label for="cusID">客户身份证号</label>
+        <input type="cusID" name="cusID" id="cusID" required>
+    
+    <label for="loanID">贷款号</label>
+        <input type="loanID" name="loanID" id="loanID" required>
+    
+    <label for="money">贷款金额</label>
+        <input name="money" id="money" required>
+
+    <input type="submit" value="insert">
+
+  </form>
+  
+</section>
